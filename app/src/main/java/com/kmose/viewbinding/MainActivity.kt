@@ -1,7 +1,6 @@
 package com.kmose.viewbinding
 
 import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.DataBindingUtil
 import android.os.Bundle
 import com.kmose.viewbinding.databinding.ActivityMainBinding
 
@@ -10,8 +9,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         binding.btnSubmit.setOnClickListener {
             displayGreeting()
