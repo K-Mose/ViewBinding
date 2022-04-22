@@ -189,3 +189,12 @@ class MyBackgroundService : Service() {
   ![image](https://user-images.githubusercontent.com/55622345/164622234-42b3793a-aa09-4eaa-9d37-e0c268f5681e.png) <br>
   서비스가 실행되고 종료됨을 확인 할 수 있습니다.
 </details>
+
+<details>
+  <summary><b>Send Extra Data to Service</b></summary>
+  서비스에 `intent.putExtra()`를 이용해서 Activity간 데이터 전송과 같이 데이터를 보낼 수 있습니다. 
+  
+  우선 `Activity`에서 전송할 데이터를 추가합니다. ``serviceIntent.putExtra("NAME", "MOSES")``
+  
+  그리고 Service의 `onStartCommand()`에서 ``val name = intent?.getStringExtra("name")``으로 데이터를 받습니다. 
+</details>
