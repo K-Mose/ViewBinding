@@ -1,5 +1,7 @@
 # ViewBinding
-
+우선 Google I/O에서 소개된 ViewBinding을 먼저 보는 것을 추천합니다. 
+https://youtu.be/Qxj2eBmXLHg?t=444
+ - (Google I/O'19 - Accessing View)
 
 ## ViewBinding vs DataBinding
 <p><b> There is nothing viewbinding can do that databnidng cannot do </b></p>
